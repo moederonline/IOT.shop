@@ -1,0 +1,103 @@
+* {
+    box-sizing:border-box;
+  }
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.header{
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    background-color:#333;
+}
+
+.links-nav{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 15px 20px;
+    
+}
+
+.links-nav:hover{
+    background-color:grey;
+    color: black;
+}
+
+
+#logo_devwear{
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+/* Main */
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* sidebar links */
+.sidebar{
+    background-color: #f1f1f1;
+    flex: 30%;
+    padding: 20px;
+    
+}
+
+.sidebar img{
+    width: 200px;;
+}
+
+.design-img  {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.design-img:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.test img{
+    padding: 10px;;
+}
+
+.main-content{
+    flex: 70%;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+#main-kleding1{
+    width: 500px;
+}
+
+#main-kleding2{
+    width: 500px;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #DDD;  
+}
+
+
+@media screen and (max-width: 700px) {
+    .flex-row, .navbar {   
+      flex-direction: column;
+    }
+
+    #logo_devwear{
+        display: none;
+    }
